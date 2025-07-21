@@ -29,18 +29,21 @@ header {
 .logo {
   width: 200px;
   line-height: 100px;
-  background-color: lightcyan;
-  color: #333;
+  background-color: lightskyblue;
+
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
+}
+.logo > a {
+  color: #fff;
 }
 /* 상단 메뉴 */
 nav {
   position: relative;
   width: 1000px;
   height: 100px;
-  background-color: blanchedalmond;
+  background-color: antiquewhite;
 }
 #topMenu {
   position: absolute;
@@ -48,16 +51,52 @@ nav {
   right: 20px;
   display: flex;
   width: 800px;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
 }
 #topMenu > li {
   width: calc(100% / 4);
+  background-color: lightskyblue;
 }
 #topMenu > li > a {
   display: block;
   line-height: 60px;
+  color: #fff;
 }
 #topMenu > li > a:hover {
   background-color: gray;
   color: #fff;
+}
+/* 메인 */
+.contents {
+  width: 100%;
+  padding: 20px;
+  /* background-color: cadetblue; */
+}
+.healing > h1 {
+  margin: 15px 0;
+}
+.desc {
+  display: flex;
+  gap: 20px;
+}
+.desc-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.desc-image > img {
+  display: block;
+  transition: all 0.3s;
+}
+.desc-detail {
+  width: 600px;
+}
+.desc-top > h2 {
+  margin-bottom: 10px;
+}
+.desc-top > p {
+  margin-bottom: 15px;
+}
+.desc-image:hover img {
+  transform: scale(1.2);
+  filter: blur(2px);
 }
